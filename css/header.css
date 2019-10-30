@@ -210,10 +210,11 @@ header .navbar {
   background: transparent;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  z-index: 1111;
 }
 
 header .navbar.scrolled {
-  background: rgba(51, 51, 51, 0.411);
+  background: rgba(0, 0, 0, 0.651);
 }
 
 header .navbar .logo a {
