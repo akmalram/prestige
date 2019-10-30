@@ -238,7 +238,7 @@ header .header-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header .header-content .header-inner {
