@@ -9,13 +9,13 @@
 
 header {
   overflow: hidden;
-  min-height: 100vh;
   background: url(../img/bg-img-2.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   -webkit-box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.664);
           box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.664);
   color: #333;
+  padding-bottom: 50px;
 }
 
 header .navbar {
@@ -238,7 +238,6 @@ header .header-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  min-height: 100vh;
 }
 
 header .header-content .header-inner {
