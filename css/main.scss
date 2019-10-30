@@ -1,4 +1,5 @@
 @import '../css/smart-grid';
+@import '../css/mixins';
 
 $color-primary: #f9eb2d;
 
@@ -166,6 +167,48 @@ $color-primary: #f9eb2d;
             background: rgb(195,90,240);
             color: #fff;
             border-radius: 50%;
+        }
+    }
+}
+
+.contact-form {
+    @include content-padding();
+    background: #b150d8;
+    color: #fff;
+
+    .title-primary {
+        color: #fff;
+    }
+
+    .page-desc {
+        font-size: 20px;
+    }
+    .form {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        &-input {
+            border-color: $color-primary;
+            margin-bottom: 40px;
+        }
+    }
+
+    .btn-primary {
+        font-size: 23px;
+        span {
+            display: block;
+            font-size: 11px;
+        }
+    }
+
+    @include xs-block {
+        .title-primary {
+            font-size: 23px;
+            line-height: 1.3em;
+        }
+
+        .page-desc {
+            font-size: 15px;
         }
     }
 }
