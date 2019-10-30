@@ -43,6 +43,7 @@ $color-primary: #f9eb2d;
             margin-top: 40px;
             padding: 10px 20px;
             width: 300px;
+            max-width: 100%;
             font-style: italic;
             background: $color-primary;
 
@@ -129,14 +130,7 @@ $color-primary: #f9eb2d;
             }
     
             .quote {
-                margin: 0 auto;
-                margin-top: 40px;
-                padding: 10px 20px;
-                width: 300px;
-                max-width: 100%;
                 box-sizing: border-box;
-                background: $color-primary;
-    
                 p {
                     font-size: 15px;
                 }

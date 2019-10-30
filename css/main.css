@@ -38,6 +38,7 @@
   margin-top: 40px;
   padding: 10px 20px;
   width: 300px;
+  max-width: 100%;
   font-style: italic;
   background: #f9eb2d;
 }
@@ -129,14 +130,8 @@
     font-size: 16px;
   }
   .woman-journal .content .quote {
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 10px 20px;
-    width: 300px;
-    max-width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: #f9eb2d;
   }
   .woman-journal .content .quote p {
     font-size: 15px;
