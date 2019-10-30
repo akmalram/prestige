@@ -1,0 +1,159 @@
+@import './smart-grid';
+
+@include reset();
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ps {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.page-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.page-desc {
+    font-size: 24px;
+}
+
+.form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &-input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 10px 0;
+        border: 2px solid grey;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.container {
+    @include wrapper();
+}
+
+.show-xs {
+    display: none;
+    @include xs(display, block);
+}
+
+.show-sm {
+    display: none;
+    @include sm(display, block);
+}
+.hide-sm {
+    @include sm-block {
+        display: none !important;
+    };
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.title-primary {
+    font-size: 60px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    @include sm-block {
+        font-size: 40px;
+    }
+
+    @include xs-block {
+        font-size: 30px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+
+}
+
+.title-tertiary {
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+    @include sm-block {
+        font-size: 20px;
+    }
+}
+
+.hr {
+    width: 300px;
+    height: 3px;
+    background-color: #333;
+    margin: 30px auto;
+}
+
+.title-secondary {
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    @include sm-block {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    @include xs-block {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+
+}
+
+.row {
+    @include row-flex();
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #333;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    transition: background-color .3s;
+    cursor: pointer;
+    border: none;
+
+    &:hover, &:focus {
+        background: rgb(90, 86, 86);
+        outline: none;
+    }
+}

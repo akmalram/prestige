@@ -1,0 +1,411 @@
+.btn-primary {
+  background-color: #f9eb2d;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background-color: #f9eb2d;
+}
+
+header {
+  overflow: hidden;
+  min-height: 100vh;
+  background: url(../img/bg-img-2.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.664);
+          box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.664);
+  color: #333;
+}
+
+header .navbar {
+  padding: 20px 0;
+  background: #fff;
+  width: 100%;
+  min-height: auto;
+}
+
+header .navbar a {
+  color: #333;
+}
+
+header .navbar-container {
+  width: 1170px;
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: auto;
+}
+
+header .navbar-inner {
+  min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .logo a {
+  font-size: 30px;
+  color: #333;
+  text-align: right;
+}
+
+header .navbar .logo a span {
+  font-size: 12px;
+  display: block;
+}
+
+header .navbar-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar-contacts .social-icons {
+  margin-left: 10px;
+}
+
+header .navbar-contacts .social-icons a {
+  display: block;
+  font-size: 25px;
+  color: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .navbar-contacts .social-icons a:hover {
+  text-shadow: 0 0 3px #333;
+}
+
+header .phone-call a {
+  color: #333;
+  font-size: 16px;
+  line-height: 14px;
+  white-space: nowrap;
+  display: block;
+}
+
+header .phone-call a:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+header .phone-call a i {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 5px;
+  color: #333;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .navbar.undermenu .navbar-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .navbar.undermenu .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 33.333%;
+    text-align: center;
+  }
+  header .navbar.undermenu .navbar-contacts {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .navbar.undermenu .navbar-contacts .phone-call {
+    width: 33.333%;
+  }
+  header .navbar.undermenu .navbar-contacts .phone-call span {
+    display: none;
+  }
+  header .navbar.undermenu .navbar-contacts .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar.undermenu .navbar-contacts .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  header .navbar.slidedown .navbar-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .navbar.slidedown .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 33.333%;
+    text-align: center;
+  }
+  header .navbar.slidedown .navbar-contacts {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .navbar.slidedown .navbar-contacts .phone-call {
+    width: 33.333%;
+  }
+  header .navbar.slidedown .navbar-contacts .phone-call span {
+    display: none;
+  }
+  header .navbar.slidedown .navbar-contacts .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar.slidedown .navbar-contacts .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  header .navbar.slideleft {
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .navbar.slideleft .phone-call {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 33.3333%;
+  }
+  header .navbar.slideleft .phone-call span {
+    display: none;
+  }
+  header .navbar.slideleft .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 33.3333%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar.undermenu {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  header .phone-call {
+    width: 33.333%;
+  }
+  header .phone-call span {
+    display: none;
+  }
+}
+
+header .navbar {
+  position: fixed;
+  background: transparent;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .navbar.scrolled {
+  background: rgba(51, 51, 51, 0.411);
+}
+
+header .navbar .logo a {
+  display: inline-block;
+  color: #fff;
+}
+
+header .navbar .phone-call {
+  margin: 0 10px;
+}
+
+header .navbar .phone-call a {
+  color: #fff;
+}
+
+header .navbar .phone-call a i {
+  color: #fff;
+}
+
+header .header-content {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  height: 100vh;
+}
+
+header .header-content .header-inner {
+  padding: 1px;
+  height: 100%;
+  text-align: center;
+}
+
+header .header-content .page-title {
+  max-width: 90%;
+  margin: 0 auto;
+  width: 760px;
+  font-size: 50px;
+  border: 2px solid #fff;
+  margin-top: 260px;
+  margin-bottom: 60px;
+  padding: 30px 20px;
+  padding-bottom: 50px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-content .page-title span {
+  line-height: 2em;
+  padding: 0px 30px;
+  background-color: #f9eb2d;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  bottom: -1em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-content .page-title span::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  right: 0;
+}
+
+header .header-content .page-desc {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+header .header-content .btn-primary {
+  font-size: 25px;
+}
+
+header .header-content .btn-primary span {
+  display: block;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  header .header-content .page-title {
+    max-width: 90%;
+    width: 660px;
+    font-size: 45px;
+    margin-top: 200px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  header .header-content .page-title span {
+    padding: 0px 30px;
+    background-color: #f9eb2d;
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    min-height: auto;
+  }
+  header .navbar .navbar-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .navbar .phone-call {
+    margin: 5px 10px;
+  }
+  header .navbar .phone-call a {
+    color: #fff;
+    font-size: 18px;
+  }
+  header .navbar .phone-call a i {
+    color: #fff;
+  }
+  header .navbar .btn-primary {
+    font-size: 22px;
+  }
+  header .header-content {
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  header .header-content .page-title {
+    width: 450px;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+    padding-bottom: 50px;
+  }
+  header .header-content .page-title span {
+    font-size: 25px;
+  }
+  header .header-content .page-desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    background-position: center bottom;
+  }
+  header .navbar .logo a {
+    font-size: 25px;
+  }
+  header .navbar .navbar-contacts .btn-primary {
+    display: none;
+  }
+  header .navbar .navbar-contacts .phone-call {
+    width: auto;
+  }
+  header .navbar .navbar-contacts .phone-call span {
+    display: inline-block;
+    font-size: 16px;
+  }
+  header .header-content {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  header .header-content .page-title {
+    width: 260px;
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding: 19px 20px;
+    padding-bottom: 28px;
+  }
+  header .header-content .page-title span {
+    font-size: 20px;
+  }
+  header .header-content .page-desc {
+    font-size: 18px;
+  }
+  header .header-content .btn-primary {
+    font-size: 22px;
+  }
+  header .header-content .btn-primary span {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=header.css.map */
