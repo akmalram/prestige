@@ -1,4 +1,145 @@
-main {
-  height: 3000px;
+.woman-journal .photo {
+  width: 50%;
+}
+
+.woman-journal .row-inner {
+  position: relative;
+}
+
+.woman-journal .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.woman-journal .video-btn {
+  font-size: 30px;
+}
+
+.woman-journal .content {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 200px;
+  position: relative;
+}
+
+.woman-journal .content h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.woman-journal .content p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.woman-journal .content .quote {
+  margin-top: 40px;
+  padding: 10px 20px;
+  width: 300px;
+  font-style: italic;
+  background: #f9eb2d;
+}
+
+.woman-journal .content .quote p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .woman-journal .row-inner {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .woman-journal .video {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+  .woman-journal .video-btn {
+    width: 200px;
+    font-size: 30px;
+  }
+  .woman-journal .photo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    max-width: 500px;
+  }
+  .woman-journal .content {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    padding: 50px;
+    max-width: 500px;
+    text-align: center;
+  }
+  .woman-journal .content .quote {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    width: 300px;
+    background: #f9eb2d;
+  }
+  .woman-journal .content .quote p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .woman-journal .video {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+  .woman-journal .video-btn {
+    width: 200px;
+    font-size: 30px;
+  }
+  .woman-journal .photo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    max-width: 500px;
+  }
+  .woman-journal .content {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    padding: 50px 0;
+    max-width: 500px;
+    text-align: center;
+  }
+  .woman-journal .content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .woman-journal .content p {
+    font-size: 16px;
+  }
+  .woman-journal .content .quote {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    width: 300px;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #f9eb2d;
+  }
+  .woman-journal .content .quote p {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,8 +7,9 @@ $color-primary: #f9eb2d;
     background-color: $color-primary;
     color: #333;
 
-    &:hover {
-        background-color: $color-primary;
+
+    &:focus, &:hover {
+        background-color: rgba($color-primary, .6);
     }
 }
 

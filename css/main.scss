@@ -1,3 +1,146 @@
-main {
-    height: 3000px;
+@import '../css/smart-grid';
+
+$color-primary: #f9eb2d;
+
+
+.woman-journal {
+    .photo {
+        width: 50%;
+    }
+
+    .row-inner {
+        position: relative;
+    }
+
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &-btn {
+            font-size: 30px;
+        }
+    }
+
+    .content {
+        width: 50%;
+
+        box-sizing: border-box;
+        padding-top: 200px;
+        position: relative;
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+
+        .quote {
+            margin-top: 40px;
+            padding: 10px 20px;
+            width: 300px;
+            font-style: italic;
+            background: $color-primary;
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @include sm-block {
+        .row-inner {
+            justify-content: space-evenly;
+        }
+        .video {
+            order: 2;
+            width: 100%;
+            position: static;
+            text-align: center;
+    
+            &-btn {
+                width: 200px;
+                font-size: 30px;
+            }
+        }
+        .photo {
+            order: 1;
+            width: 100%;
+            max-width: 500px;
+        }
+    
+        .content {
+            order: 3;
+            width: 100%;
+            padding: 50px;
+            max-width: 500px;
+            text-align: center;
+    
+            .quote {
+                margin: 0 auto;
+                margin-top: 40px;
+                padding: 10px 20px;
+                width: 300px;
+                background: $color-primary;
+    
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    @include xs-block {
+        .video {
+            order: 2;
+            width: 100%;
+            position: static;
+            text-align: center;
+    
+            &-btn {
+                width: 200px;
+                font-size: 30px;
+            }
+        }
+        .photo {
+            order: 1;
+            width: 100%;
+            max-width: 500px;
+        }
+    
+        .content {
+            order: 3;
+            width: 100%;
+            padding: 50px 0;
+            max-width: 500px;
+            text-align: center;
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+    
+            .quote {
+                margin: 0 auto;
+                margin-top: 40px;
+                padding: 10px 20px;
+                width: 300px;
+                max-width: 100%;
+                box-sizing: border-box;
+                background: $color-primary;
+    
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }
